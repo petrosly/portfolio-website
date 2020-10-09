@@ -1,0 +1,146 @@
+html{
+  box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background: #ffffff;
+  margin: 0;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: 100vh 100vh 100vh;
+  margin: 0;
+}
+/* Left- Right Effects System */
+.nav-bar-left-effect{
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #707070;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.nav-bar-right-effect{
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #707070;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+/* Top Section - Top content */
+.top-section{
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.nav-display{
+  height: 8vh;
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  background: #707070;
+}
+.nav-display a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-left: 2vw;
+}
+.links-bar{
+  list-style: none;
+  margin-left: 14vw;
+}
+.links-bar li{
+  display: inline;
+  color: white;
+  font-size: 1.7rem;
+  margin-right: 3vw;
+}
+.links-bar a{
+  font-size: inherit;
+  font-weight: normal;
+  margin-left: 0;
+}
+.greeting-block{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  margin-top: 35vh;
+}
+.greeting-content{
+  display: inline-block;
+}
+.hello-content{
+  font-size: 2rem;
+  margin-left: 2vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.greeting-image{
+  width: 35%;
+  margin-left: 8vw;
+}
+.contact-button, .get-resume-button{
+    width: 40%;
+    height: 6vh;
+    border-radius: 15px;
+    font-size: 1.7rem;
+    background: #ffffff;
+    margin-left: 2vw;
+    padding: 0;
+    border: 1px solid black;
+    margin-top: 3vh;
+}
+.get-resume-button{
+  margin-left: 3vw;
+  background: #854fee;
+  border: none;
+  color: #ffffff;
+}
+/* About Section - About us block */
+.about-section{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  margin-top: 35vh;
+}
+.about-image{
+  width: 35%;
+  margin-right: 8vw;
+}
+.about-header{
+  margin: 0;
+  font-size: 2rem;
+}
+.about-content{
+  font-size: 1.5rem;
+}
+.about-text{
+  margin-top: 5vh;
+}
+/* Projects Section - Projects block*/
+.projects-section{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  flex-flow: column nowrap;
+}
