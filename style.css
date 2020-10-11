@@ -10,7 +10,6 @@ body{
   font-family: 'Roboto', sans-serif;
   background: #ffffff;
   margin: 0;
-  background: url('images/back.jpg');
 }
 .grid-container{
   display: grid;
@@ -37,10 +36,63 @@ body{
   grid-column: 3/4;
   grid-row: 1/2;
 }
+.home-left-effect{
+  grid-row: 1/2;
+  grid-column:1/2;
+  background: url(images/left-side-background-1920.jpg);
+  height: 100vh;
+}
+.home-right-effect{
+  grid-row: 1/2;
+  grid-column:3/4;
+  background: url(images/right-side-background-1920.jpg);
+  height: 100vh;
+}
+.about-left-effect{
+  grid-row: 2/3;
+  grid-column:1/2;
+  background: url(images/left-side-background-1920.jpg);
+  height: 100vh;
+}
+.about-right-effect{
+  grid-row: 2/3;
+  grid-column:3/4;
+  background: url(images/right-side-background-1920.jpg);
+  height: 100vh;
+}
+.projects-left-effect{
+  grid-row: 3/4;
+  grid-column: 1/2;
+  height: 126vh;
+  background: url(images/projects-background/projects-left-top-half.jpg), url(images/projects-background/projects-left-bottom-half.jpg);
+  background-position: top, bottom;
+  background-repeat: no-repeat no-repeat;
+}
+.projects-right-effect{
+  grid-row: 3/4;
+  grid-column: 3/4;
+  height: 126vh;
+  background: url(images/projects-background/projects-right-top-half.jpg), url(images/projects-background/projects-right-bottom-half.jpg);
+  background-position: top, bottom;
+  background-repeat: no-repeat no-repeat;
+}
+.contact-left-effect{
+  grid-row: 4/5;
+  grid-column:1/2;
+  background: url(images/left-side-background-1920.jpg);
+  height: 100vh;
+}
+.contact-right-effect{
+  grid-row: 4/5;
+  grid-column:3/4;
+  background: url(images/right-side-background-1920.jpg);
+  height: 100vh;
+}
 /* Top Section - Top content */
 .top-section{
   grid-row: 1/2;
   grid-column: 2/3;
+  background: url(images/central-part-background-1920.jpg);
 }
 .nav-display{
   height: 8vh;
@@ -66,7 +118,7 @@ body{
 }
 .links-bar{
   list-style: none;
-  margin-left: 14vw;
+  margin-left: 13vw;
 }
 .links-bar li{
   display: inline;
@@ -124,6 +176,10 @@ body{
 .about-section{
   grid-column: 2/3;
   grid-row: 2/3;
+  height: 100vh;
+  background: url(images/central-part-background-1920.jpg);
+}
+.about-wrapper{
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -151,6 +207,9 @@ body{
   grid-row: 3/4;
   display: flex;
   flex-flow: column nowrap;
+  background: url(images/projects-background/central-part-projects-top-half.jpg), url(images/projects-background/central-part-projects-bottom-half.jpg);
+  background-position: top, bottom;
+  background-repeat: no-repeat no-repeat;
 }
 .projects-header{
   font-size: 2.5rem;
@@ -160,6 +219,10 @@ body{
   border: #D3D3D3 solid 2px;
   margin-bottom: 1.66rem;
   height: 26vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #ffffff;
 }
 .chat-details, .website-details, .game-details, .portfolio-details{
   width: 70%;
@@ -188,8 +251,8 @@ body{
 .project-chat-details, .project-website-details, .project-game-details, .project-portfolio-details{
   margin-top: 0;
 }
-.project-chat-image{
-  width: 150px;
+.project-chat-image, .project-game-image, .project-portfolio-image, .project-website-image{
+  width: 35%;
 }
 .chat-details ul, .website-details ul, .game-details ul, .portfolio-details ul{
   list-style-type: none;
@@ -210,6 +273,7 @@ body{
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  background: url(images/central-part-background-1920.jpg);
 }
 .contact-content{
   flex:0 0 100%;
