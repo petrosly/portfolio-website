@@ -31,7 +31,6 @@ body{
   height: 8vh;
   position: fixed;
   top: 0;
-  width: 100%;
   background: #707070;
   grid-column: 3/4;
   grid-row: 1/2;
@@ -112,6 +111,9 @@ body{
   border: none;
   color: #ffffff;
 }
+.get-resume-button:focus, .contact-button:focus { 
+  outline: none;
+}
 /* About Section - About us block */
 .about-section{
   grid-column: 2/3;
@@ -143,4 +145,54 @@ body{
   grid-row: 3/4;
   display: flex;
   flex-flow: column nowrap;
+}
+.projects-header{
+  font-size: 2rem;
+  margin-top: 0;
+}
+.project-chat, .project-website, .project-game, .project-portfolio{
+  border: #D3D3D3 solid 2px;
+  margin-bottom: 1.66rem;
+  height: 26vh;
+}
+.chat-details, .website-details, .game-details, .portfolio-details{
+  width: 70%;
+  padding: 1.5vw;
+  display: inline-block;
+  height: 26vh;
+}
+.project-chat-header, .project-website-header, .project-game-header, .project-portfolio-header{
+  margin-top: 0;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+.project-chat .chat-source, .project-game .game-source, .project-portfolio .portfolio-source{
+  width: 1.2vw;
+  filter: invert(35%) sepia(90%) saturate(3330%) hue-rotate(244deg) brightness(96%) contrast(95%);
+  margin-left: 1.5vw;
+}
+.project-chat .chat-demo, .project-website .website-demo, .project-game .game-download, .project-portfolio .portfolio-demo{
+  width: 1.1vw;
+  filter: invert(35%) sepia(90%) saturate(3330%) hue-rotate(244deg) brightness(96%) contrast(95%);
+  margin-left: .5vw;
+}
+.project-website .website-demo{
+  margin-left: 1.5vw;
+}
+.project-chat-details, .project-website-details, .project-game-details, .project-portfolio-details{
+  margin-top: 0;
+}
+.project-chat-image{
+  width: 150px;
+}
+.chat-details ul, .website-details ul, .game-details ul, .portfolio-details ul{
+  list-style-type: none;
+  padding: 0;
+}
+.chat-details li, .website-details li, .game-details li, .portfolio-details li{
+  display: inline-block;
+  background: #854fee;
+  padding: .5vw;
+  font-size: .9rem;
+  color: #ffffff;
 }
