@@ -358,6 +358,9 @@ body{
   flex: 0 0 48%;
   font-size: 1.2rem;
 }
+.heart-img{
+  width: 3%;
+}
 .right-footer{
   display: inline-block;
   flex: 0 0 48%;
