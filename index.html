@@ -16,7 +16,7 @@
     <!-- Section 1 - navigation bar and greeting block-->
     <section class="top-section">
       <nav class="nav-bar nav-display">
-        <a href="#" class="logo">Petros Lymperopoulos</a>
+        <img src="images/petros-logo-cropped.jpg" class="my-logo" alt="My personal logo">
         <ul class="links-bar">
           <li><a href="">About</a></li>
           <li><a href="">Projects</a></li>
@@ -101,13 +101,41 @@
             <li>HTML5</li>
             <li>CSS3</li>
             <li>ES6</li>
-            <li>Node.js</li>
-            <li>Heroku</li>
+            <li>Netlify</li>
           </ul>
         </div>
       </div>
     </section>
     <section class="contact-section"> 
+      <div class="contact-content">
+        <h2 class="contact-header">Contact</h2>
+        <form method="POST" name="contact-form" data-netlify="true" class="contact-form">
+          <div class="name-label">
+            <label for="name">Name:</label>
+          </div>
+          <div class="email-label">
+            <label for="email">E-mail:</label>
+          </div>
+          <input type="text" name="name" class="name-input">
+          <input type="email" name="email" class="email-input">
+          <div class="message-label">
+            <label for="message">Message:</label>
+          </div>
+          <textarea name="message" cols="30" rows="10" class="textarea"></textarea>
+          <input type="submit" value="Send Message" class="submit-input"> 
+        </form>
+      </div>
+      <div class="footer">
+        <div class="left-footer">
+          <p class="copyright">Designed & Developed by<br>
+          Petros Lymperopoulos &copy; 2020</p>
+        </div>
+        <div class="right-footer">
+          <img src="images/linkedin-in-brands.svg" alt="LinkedIn logo">
+          <img src="images/github-brands.svg" alt="Github logo">
+          <img src="images/mail-svgrepo-com.svg" alt="Mail image">
+        </div>
+      </div>
     </section>
     <div class="right-content">
       <!-- Effects on right side of the page -->

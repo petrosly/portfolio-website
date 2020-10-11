@@ -10,11 +10,12 @@ body{
   font-family: 'Roboto', sans-serif;
   background: #ffffff;
   margin: 0;
+  background: url('images/back.jpg');
 }
 .grid-container{
   display: grid;
   grid-template-columns: 20vw 60vw 20vw;
-  grid-template-rows: 100vh 100vh 100vh;
+  grid-template-rows: 100vh 100vh 126vh 100vh;
   margin: 0;
 }
 /* Left- Right Effects System */
@@ -31,6 +32,7 @@ body{
   height: 8vh;
   position: fixed;
   top: 0;
+  width: 100%;
   background: #707070;
   grid-column: 3/4;
   grid-row: 1/2;
@@ -50,6 +52,10 @@ body{
   top: 0;
   width: 100%;
   background: #707070;
+}
+.my-logo{
+  margin-left: 2vw;
+  height: 7vh;
 }
 .nav-display a{
   text-decoration: none;
@@ -95,7 +101,7 @@ body{
   margin-left: 8vw;
 }
 .contact-button, .get-resume-button{
-    width: 40%;
+    width: 42%;
     height: 6vh;
     border-radius: 15px;
     font-size: 1.7rem;
@@ -106,7 +112,7 @@ body{
     margin-top: 3vh;
 }
 .get-resume-button{
-  margin-left: 3vw;
+  margin-left: 2.2vw;
   background: #854fee;
   border: none;
   color: #ffffff;
@@ -131,7 +137,7 @@ body{
 }
 .about-header{
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .about-content{
   font-size: 1.5rem;
@@ -147,7 +153,7 @@ body{
   flex-flow: column nowrap;
 }
 .projects-header{
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 0;
 }
 .project-chat, .project-website, .project-game, .project-portfolio{
@@ -195,4 +201,105 @@ body{
   padding: .5vw;
   font-size: .9rem;
   color: #ffffff;
+}
+/* Contact Section - Contact block & footer*/
+.contact-section{
+  grid-column: 2/3;
+  grid-row: 4/5;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact-content{
+  flex:0 0 100%;
+}
+.contact-header{
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+.contact-form{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 70%;
+}
+.name-label{
+  flex: 0 0 48%;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.email-label{
+  flex: 0 0 48%;
+  display: inline-block;
+  margin-left: 4%;
+  font-size: 1.2rem;
+}
+.name-input{
+  flex: 0 0 48%;
+  margin-top: 1%;
+  color: #000000;
+  background: #D3D3D3;
+  border: none;
+  height: 4vh;
+  font-size: 1.1rem;
+}
+.email-input{
+  flex: 0 0 48%;
+  margin-left: 4%;
+  margin-top: 1%;
+  color: #000000;
+  background: #D3D3D3;
+  border: none;
+  height: 4vh;
+  font-size: 1.1rem;
+}
+.message-label{
+  flex: 0 0 100%;
+  font-size: 1.2rem;
+  margin-top: 1%;
+}
+.textarea{
+  flex: 0 0 100%;
+  margin-top: 1%;
+  color: #000000;
+  background: #D3D3D3;
+  border: none;
+  font-size: 1.1rem;
+}
+.name-input:focus, .email-input:focus, .textarea:focus{
+  outline: none;
+}
+.submit-input{
+  font-size: 1.2rem;
+  color: #854fee;
+  margin-top: 2%;
+  padding: 1vh;
+  border: 2px solid #d3d3d3;
+  background: #ffffff;
+}
+.submit-input:hover{
+  background: #DCDCDC;
+}
+.footer{
+  display: flex;
+  flex-flow: row nowrap;
+  height: 5vh;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.left-footer{
+  display: inline-block;
+  flex: 0 0 48%;
+  font-size: 1.2rem;
+}
+.right-footer{
+  display: inline-block;
+  flex: 0 0 48%;
+  margin-left: 39%;
+}
+.right-footer img{
+  width: 6%;
+  margin-left: 2%;
 }
