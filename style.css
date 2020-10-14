@@ -37,12 +37,13 @@ body{
   background: #707070;
   z-index: 2;
 }
-.logo-anchor{
+.nav-display .logo-anchor{
   display: flex;
   align-items: center;
+  margin: 0;
+  margin-left: 20vw;
 }
 .my-logo{
-  margin-left: 20vw;
   height: 7vh;
 }
 .nav-display a{
