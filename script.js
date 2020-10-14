@@ -31,10 +31,10 @@ document.querySelector(".project-portfolio").addEventListener("mouseout",()=>{
   document.querySelector(".portfolio-hover").style.display = "none";
 });
 /* Modal behavior*/
-const expandChat  = document.querySelector(".expand-chat-hover");
-const expandHotel = document.querySelector(".expand-hotel-hover");
-const expandGame  = document.querySelector(".expand-game-hover");
-const expandPortfolio = document.querySelector(".expand-portfolio-hover");
+const expandChat  = document.querySelector(".chat-hover");
+const expandHotel = document.querySelector(".hotel-hover");
+const expandGame  = document.querySelector(".game-hover");
+const expandPortfolio = document.querySelector(".portfolio-hover");
 const modal = document.querySelector(".modal");
 const modalTitle  = document.querySelector(".modal-title");
 const modalDescription  = document.querySelector(".modal-description");
@@ -99,3 +99,11 @@ expandPortfolio.addEventListener("click", ()=>{
   modalFirstButton.innerHTML = "Get Source";
   modalSecondButton.innerHTML = "View Demo";
 });
+/* Top Section Buttons*/
+document.querySelector(".contact-button").addEventListener("click",()=>{
+  document.querySelector("#contact").scrollIntoView();
+});
+
+// document.querySelector(".get-resume-button").addEventListener("click",()=>{
+//   window.open("text.pdf","_blank");
+// })

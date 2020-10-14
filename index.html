@@ -10,13 +10,13 @@
 <body>
   <div class="grid-container">
     <!-- Section 1 - navigation bar and greeting block-->
-    <section class="top-section">
+    <section class="top-section" id="top">
       <nav class="nav-bar nav-display">
-        <img src="images/petros-logo-cropped.jpg" class="my-logo" alt="My personal logo">
+        <a href="#" class="logo-anchor"><img src="images/petros-logo-cropped.jpg" class="my-logo" alt="My personal logo"></a>
         <ul class="links-bar">
-          <li><a href="">About</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class=greeting-block>
@@ -28,7 +28,7 @@
         <img src="images/home-right.png" alt="Cartoon boy in front of computer" class="greeting-image">
       </div>
     </section>
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="about-wrapper">
         <img src="images/about-us.png" alt="Cartoon man in front of computer" class="about-image">
         <div class="about-content">
@@ -37,7 +37,7 @@
         </div>
       </div>
     </section>
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
       <div class="projects-wrapper">
         <h2 class="projects-header">My Projects</h2>
         <p class="projects-description"><i>Click on an image to see more information about that project!</i></p> <br>
@@ -113,7 +113,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-section"> 
+    <section class="contact-section" id="contact"> 
       <div class="contact-content">
         <h2 class="contact-header">Contact Me</h2>
         <form method="POST" name="contact-form" data-netlify="true" class="contact-form" autocomplete="off">
@@ -126,9 +126,10 @@
       <div class="footer">
           <p class="copyright">Designed & Developed with <img src="images/heart-svgrepo-com.svg" alt="Heart icon!"> by<br>
           Petros Lymperopoulos &copy; 2020</p>
-          <img src="images/linkedin-in-brands.svg" alt="LinkedIn logo" class="linkedin-logo">
-          <img src="images/github-brands.svg" alt="Github logo" class="github-logo">
-          <img src="images/mail-svgrepo-com.svg" alt="Mail image" class="mail-logo">
+          <a href="https://www.linkedin.com/in/petroslymperopoulos/" class="linkedin-anchor"><img src="images/linkedin-in-brands.svg" alt="LinkedIn logo" class="linkedin-logo"></a>
+          <a href="https://github.com/petrosly"><img src="images/github-brands.svg" alt="Github logo" class="github-logo"></a>
+          <a href = "mailto: petroslymper@gmail.com"><img src="images/mail-svgrepo-com.svg" alt="Mail image" class="mail-logo"></a>
+          <a href="#top" class="scroll-top"><img src="images/up-arrow-svgrepo-com.svg" alt="Arrow image pointing"></a>
       </div>
     </section>
   </div>
