@@ -295,6 +295,7 @@ body{
   grid-row: 4/5;
   background-image: url(/images/background-mirrored.svg);
   background-size: 100% 100%;
+  position: relative;
 }
 .contact-content{
   display: flex;
@@ -353,7 +354,7 @@ input:focus, textarea:focus{
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   color: #ffffff;
   padding-left: 20vw;
@@ -369,5 +370,5 @@ input:focus, textarea:focus{
   margin-left: 40vw;
 }
 .footer .mail-logo{
-  margin:0;
+  margin:0; 
 }
