@@ -363,6 +363,7 @@ input:focus, textarea:focus{
 }
 .footer img{
   width: 1vw;
+  filter: invert(100%) sepia(65%) saturate(135%) hue-rotate(123deg) brightness(115%) contrast(105%);
 }
 .footer .linkedin-logo, .footer .github-logo, .footer .mail-logo{
   width: 1.5vw;
