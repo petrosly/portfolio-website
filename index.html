@@ -9,14 +9,6 @@
 </head>
 <body>
   <div class="grid-container">
-    <div class="left-content">
-      <!-- Effects on left side of the page -->
-      <div class="nav-bar-left-effect"></div>
-      <div class="home-left-effect"></div>
-      <div class="about-left-effect"></div>
-      <div class="projects-left-effect"></div>
-      <div class="contact-left-effect"></div>
-    </div>
     <!-- Section 1 - navigation bar and greeting block-->
     <section class="top-section">
       <nav class="nav-bar nav-display">
@@ -46,97 +38,94 @@
       </div>
     </section>
     <section class="projects-section">
-      <h2 class="projects-header">My Projects</h2>
-      <div class="project-chat">
-        <div class="chat-details">
-          <h3 class="project-chat-header">Online Chat Application</h3>
-          <img class="chat-source" src='images/code-svgrepo-com.svg' alt="icon for getting the source code">
-          <img class="chat-demo" src='images/screen-svgrepo-com.svg' alt="icon for viewing demo">
-          <p class="project-chat-details">This is a web application that allows its users to have personal conversations with anyone who is online. It stores messages between users and loads them on connection. It also provides an authentication mechanism through e-mail.</p>
-          <ul class="project-chat-technologies">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>ES6</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>Socket.io</li>
-            <li>MongoDB</li>
-            <li>Heroku</li>
-          </ul>
+      <div class="projects-wrapper">
+        <h2 class="projects-header">My Projects</h2>
+        <p class="projects-description"><i>Click on an image to see more information about that project!</i></p> <br>
+        <div class="project-chat">
+          <img src="images/chat-screen.png" alt="Screenshot of my online chatroom application">
+          <div class="chat-hover">
+            <p class="chat-hover-title">Online Chatroom</p>
+            <ul class="chat-hover-technologies">
+              <li>Web Application</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Socket.io</li><br>
+              <li>MongoDB</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>ES6</li>
+              <li>Heroku</li>
+            </ul>
+            <img class="expand-chat-hover" src="images/expand-svgrepo-com.svg" alt="Expand icon">
+          </div>
         </div>
-        <img src="images/laptop-chat.jpg" alt="Online Chatroom Screenshot inside laptop mockup" class='project-chat-image'>
+        <div class="project-hotel">
+          <img src="images/hotel-screen.png" alt="Screenshot of hotel website">
+          <div class="hotel-hover">
+            <p class="hotel-hover-title">Hotel Website</p>
+            <ul class="hotel-hover-technologies">
+              <li>Website</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>ES6</li>
+            </ul>
+            <img class="expand-hotel-hover" src="images/expand-svgrepo-com.svg" alt="Expand icon">
+          </div>
+        </div>
+        <div class="project-game">
+          <img src="images/game-screen.png" alt="Screenshot of my game">
+          <div class="game-hover">
+            <p class="game-hover-title">Traffic Education Game</p>
+            <ul class="game-hover-technologies">
+              <li>Game</li>
+              <li>C#</li>
+              <li>Unity</li>
+              <li>SQLite</li>
+            </ul>
+            <img class="expand-game-hover" src="images/expand-svgrepo-com.svg" alt="Expand icon">
+          </div>
+        </div>
+        <div class="project-portfolio">
+          <img src="images/portfolio-screen.png" alt="Screenshot of my online portfolio page">
+          <div class="portfolio-hover">
+            <p class="portfolio-hover-title">Personal Website</p>
+            <ul class="portfolio-hover-technologies">
+              <li>Website</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>ES6</li>
+              <li>Netlify</li>
+            </ul>
+            <img class="expand-portfolio-hover" src="images/expand-svgrepo-com.svg" alt="Expand icon">
+          </div>
+        </div>
       </div>
-      <div class="project-website">
-        <div class="website-details">
-          <h3 class="project-website-header">Website for Hotel</h3>
-          <img class="website-demo" src='images/screen-svgrepo-com.svg' alt="icon for viewing demo">
-          <p class="project-website-details">This is a static website that is used to full display
-            the services that this hotel offers. It provides many pages so that the viewer can fully understand how this hotel works!
-          </p>
-          <ul class="project-website-technologies">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>ES6</li>
+      <div class="modal">
+        <div class="modal-content">
+          <h2 class="modal-title"></h2>
+          <img class="modal-close" src="images/close-svgrepo-com.svg" alt="Close image" onclick="closeModal()">
+          <p class="modal-description"></p>
+          <ul class="modal-technologies">
           </ul>
+          <img src="" alt="" class="modal-image">
+          <button class="first-button"></button>
+          <button class="second-button"></button>
         </div>
-        <img src="images/laptop-hotel.jpg" alt="Hotel Website Screenshot inside laptop mockup" class='project-website-image'>
-      </div>
-      <div class="project-game">
-        <div class="game-details">
-          <h3 class="project-game-header">Traffic Education Game</h3>
-          <img class="game-source" src='images/code-svgrepo-com.svg' alt="icon for getting the source code">
-          <img class="game-download" src='images/download-svgrepo-com.svg' alt="icon for downloading game">
-          <p class="project-game-details">This is my thesis project, it is a game with modern graphics and its purpose is to
-            educate children of smaller ages on the traffic education matters. It provides a database that analyzes each player's
-            score and changes the learning focus in order to help each child where it lacks knowledge.
-          </p>
-          <ul class="project-game-technologies">
-            <li>C#</li>
-            <li>Unity</li>
-            <li>SQLite</li>
-          </ul>
-        </div>
-        <img src="images/laptop-game.jpg" alt="Unity Game Screenshot inside laptop mockup" class='project-game-image'>
-      </div>
-      <div class="project-portfolio">
-        <div class="portfolio-details">
-          <h3 class="project-portfolio-header">Personal Portfolio Landing Page</h3>
-          <img class="portfolio-source" src='images/code-svgrepo-com.svg' alt="icon for getting the source code">
-          <img class="portfolio-demo" src='images/screen-svgrepo-com.svg' alt="icon for viewing demo">
-          <p class="project-portfolio-details">This is the site you are currently on! It is a fast static website that is hosted on Netlify!
-          </p>
-          <ul class="project-portfolio-technologies">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>ES6</li>
-            <li>Netlify</li>
-          </ul>
-        </div>
-        <img src="images/laptop-portfolio.jpg" alt="Online Portfolio Screenshot inside laptop mockup" class='project-portfolio-image'>
       </div>
     </section>
     <section class="contact-section"> 
       <div class="contact-content">
-        <h2 class="contact-header">Contact</h2>
-        <form method="POST" name="contact-form" data-netlify="true" class="contact-form">
-          <div class="name-label">
-            <label for="name">Name:</label>
-          </div>
-          <div class="email-label">
-            <label for="email">E-mail:</label>
-          </div>
-          <input type="text" name="name" class="name-input">
-          <input type="email" name="email" class="email-input">
-          <div class="message-label">
-            <label for="message">Message:</label>
-          </div>
-          <textarea name="message" cols="30" rows="10" class="textarea"></textarea>
+        <h2 class="contact-header">Contact Me</h2>
+        <form method="POST" name="contact-form" data-netlify="true" class="contact-form" autocomplete="off">
+          <input type="text" name="name" class="name-input" placeholder="Full Name">
+          <input type="email" name="email" class="email-input" placeholder="Email">
+          <textarea name="message" class="textarea" placeholder="Your Message"></textarea>
           <input type="submit" value="Send Message" class="submit-input"> 
         </form>
       </div>
-      <div class="footer">
+      <!-- <div class="footer">
         <div class="left-footer">
-          <p class="copyright">Designed & Developed with <img src="images/heart-svgrepo-com.svg" alt="Heart icon" class="heart-img"> by<br>
+          <p class="copyright">Designed & Developed by<br>
           Petros Lymperopoulos &copy; 2020</p>
         </div>
         <div class="right-footer">
@@ -144,16 +133,8 @@
           <img src="images/github-brands.svg" alt="Github logo">
           <img src="images/mail-svgrepo-com.svg" alt="Mail image">
         </div>
-      </div>
+      </div> -->
     </section>
-    <div class="right-content">
-      <!-- Effects on right side of the page -->
-      <div class="nav-bar-right-effect"></div>
-      <div class="home-right-effect"></div>
-      <div class="about-right-effect"></div>
-      <div class="projects-right-effect"></div>
-      <div class="contact-right-effect"></div>
-    </div>
   </div>
 
 <script src="script.js"></script>
