@@ -173,3 +173,73 @@ document.querySelector(".contact-button").addEventListener("click",()=>{
 // document.querySelector(".get-resume-button").addEventListener("click",()=>{
 //   window.open("text.pdf","_blank");
 // })
+
+/* Create burger menu */
+const navBarLinks = document.querySelector(".links-bar");
+const navBar = document.querySelector(".nav-bar");
+
+function createBurgerMenu(){
+  navBarLinks.style.display = "none";
+  var burgerIcon = document.createElement("a");
+  burgerIcon.classList.add("burger-icon");
+  var burgerImage = document.createElement("img");
+  burgerImage.setAttribute("src","images/menu-svgrepo-com.svg") ;
+  burgerImage.setAttribute("alt","Three stacked rows image that represents menu");
+  burgerIcon.appendChild(burgerImage);  
+  navBar.appendChild(burgerIcon);
+  const burgerMenuLinks = document.querySelectorAll(".links-bar li");
+  burgerMenuLinks.forEach( link => {
+    link.addEventListener("click", closeBurgerMenu);
+  });
+}
+
+function closeBurgerMenu(){
+  navBarLinks.style.display = "none";
+  let burgerImage = document.querySelector(".burger-icon img");
+  burgerImage.setAttribute("src","images/menu-svgrepo-com.svg");
+}
+
+if(screen.width < 768){
+  createBurgerMenu();
+  let burgerMenu = document.querySelector(".burger-icon");
+  let burgerImage = document.querySelector(".burger-icon img");
+  burgerMenu.addEventListener("click", ()=>{
+    if(navBarLinks.style.display == "flex"){
+      navBarLinks.style.display = "none";
+      burgerImage.setAttribute("src","images/menu-svgrepo-com.svg");
+    }else{
+      navBarLinks.style.display = "flex";
+      burgerImage.setAttribute("src","images/close-svgrepo-com.svg");      
+    }
+  });
+}
+
+window.addEventListener("resize", ()=>{
+  let burgerExists = document.querySelector(".burger-icon");
+  if(screen.width < 768 && burgerExists === null){
+    createBurgerMenu();
+    let burgerMenu = document.querySelector(".burger-icon");
+    let burgerImage = document.querySelector(".burger-icon img");
+    burgerMenu.addEventListener("click", ()=>{
+      if(navBarLinks.style.display == "flex"){
+        navBarLinks.style.display = "none";
+        burgerImage.setAttribute("src","images/menu-svgrepo-com.svg");
+      }else{
+        navBarLinks.style.display = "flex";
+        burgerImage.setAttribute("src","images/close-svgrepo-com.svg"); 
+      }
+    });
+  }
+});
+
+window.addEventListener("resize",()=>{
+  if(screen.width > 768){
+    var burgerMenu = document.querySelector(".burger-icon");
+    navBar.removeChild(burgerMenu);
+    navBarLinks.style.display = "flex";
+    const burgerMenuLinks = document.querySelectorAll(".links-bar li");
+    burgerMenuLinks.forEach( link => {
+      link.removeEventListener("click", closeBurgerMenu);
+    });
+  }
+});
