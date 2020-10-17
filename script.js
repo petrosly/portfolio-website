@@ -233,7 +233,7 @@ window.addEventListener("resize", ()=>{
 });
 
 window.addEventListener("resize",()=>{
-  if(document.documentElement.clientWidth > 768){
+  if(document.documentElement.clientWidth >= 768){
     var burgerMenu = document.querySelector(".burger-icon");
     navBar.removeChild(burgerMenu);
     navBarLinks.style.display = "flex";
