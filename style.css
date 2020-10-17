@@ -452,6 +452,9 @@ input:focus, textarea:focus{
     right: 2vw;
     top: 1vh;
   }
+  .nav-display .burger-icon:hover{
+    cursor: pointer;
+  }
   .burger-icon img{
     height: 5vh;
     filter: invert(100%) sepia(0%) saturate(735%) hue-rotate(220deg) brightness(118%) contrast(100%);
@@ -534,7 +537,7 @@ input:focus, textarea:focus{
     font-size: 1.1rem;
   }
   .scroll-top{
-    margin-left: 9vw;
+    margin-left: 7vw;
   }
   .scroll-top img{
     width: 3vw;

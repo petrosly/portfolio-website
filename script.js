@@ -1,6 +1,6 @@
 /* Handling hover on projects*/
 document.querySelector(".project-chat").addEventListener("mouseover",()=>{
-  if(screen.width > 1024){
+  if(document.documentElement.clientWidth > 1024){
     console.log('Tablet Hover');
     document.querySelector(".chat-hover").style.display = "flex";
   }
@@ -11,7 +11,7 @@ document.querySelector(".project-chat").addEventListener("mouseout",()=>{
 });
 
 document.querySelector(".project-hotel").addEventListener("mouseover",()=>{
-  if(screen.width > 1024){
+  if(document.documentElement.clientWidth > 1024){
     console.log(screen.width);
     document.querySelector(".hotel-hover").style.display = "flex";
   }
@@ -22,7 +22,7 @@ document.querySelector(".project-hotel").addEventListener("mouseout",()=>{
 });
 
 document.querySelector(".project-game").addEventListener("mouseover",()=>{
-  if(screen.width > 1024){
+  if(document.documentElement.clientWidth > 1024){
     console.log('Tablet Hover');
     document.querySelector(".game-hover").style.display = "flex";
   }
@@ -33,7 +33,7 @@ document.querySelector(".project-game").addEventListener("mouseout",()=>{
 });
 
 document.querySelector(".project-portfolio").addEventListener("mouseover",()=>{
-  if(screen.width > 1024){
+  if(document.documentElement.clientWidth > 1024){
     console.log('Tablet Hover');
     document.querySelector(".portfolio-hover").style.display = "flex";
   }
@@ -70,7 +70,7 @@ window.onclick = function(event) {
 }
 
 projectChat.addEventListener("click", ()=>{
-  if( screen.width <1025 ){
+  if( document.documentElement.clientWidth <1025 ){
     modal.style.display = "flex";
     modalSecondButton.style.display = "block";
     modalTitle.innerHTML= "Online Chatroom";
@@ -84,7 +84,7 @@ projectChat.addEventListener("click", ()=>{
 });
 
 projectHotel.addEventListener("click", ()=>{
-  if(screen.width < 1025){
+  if(document.documentElement.clientWidth < 1025){
     modal.style.display = "flex";
     modalTitle.innerHTML = "Hotel Website";
     modalDescription.innerHTML = "This is a static website that is used to represent this hotel's services. There are many more details inside the website!";
@@ -96,7 +96,7 @@ projectHotel.addEventListener("click", ()=>{
 });
 
 projectGame.addEventListener("click",()=>{
-  if(screen.width < 1025){
+  if(document.documentElement.clientWidth < 1025){
     modal.style.display = "flex";
     modalSecondButton.style.display = "block";
     modalTitle.innerHTML  =  "Traffic Education Game";
@@ -109,7 +109,7 @@ projectGame.addEventListener("click",()=>{
 });
 
 projectPortfolio.addEventListener("click",()=>{
-  if(screen.width < 1025){
+  if(document.documentElement.clientWidth < 1025){
     modal.style.display = "flex";
     modalSecondButton.style.display = "block";
     modalTitle.innerHTML = "Personal Portfolio Website";
@@ -199,7 +199,7 @@ function closeBurgerMenu(){
   burgerImage.setAttribute("src","images/menu-svgrepo-com.svg");
 }
 
-if(screen.width < 768){
+if(document.documentElement.clientWidth < 768){
   createBurgerMenu();
   let burgerMenu = document.querySelector(".burger-icon");
   let burgerImage = document.querySelector(".burger-icon img");
@@ -216,7 +216,7 @@ if(screen.width < 768){
 
 window.addEventListener("resize", ()=>{
   let burgerExists = document.querySelector(".burger-icon");
-  if(screen.width < 768 && burgerExists === null){
+  if(document.documentElement.clientWidth < 768 && burgerExists === null){
     createBurgerMenu();
     let burgerMenu = document.querySelector(".burger-icon");
     let burgerImage = document.querySelector(".burger-icon img");
@@ -233,7 +233,7 @@ window.addEventListener("resize", ()=>{
 });
 
 window.addEventListener("resize",()=>{
-  if(screen.width > 768){
+  if(document.documentElement.clientWidth > 768){
     var burgerMenu = document.querySelector(".burger-icon");
     navBar.removeChild(burgerMenu);
     navBarLinks.style.display = "flex";
