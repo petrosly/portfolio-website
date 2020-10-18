@@ -69,71 +69,19 @@ window.onclick = function(event) {
   }
 }
 
-projectChat.addEventListener("click", ()=>{
-  if( document.documentElement.clientWidth <1025 ){
-    modal.style.display = "flex";
-    modalSecondButton.style.display = "block";
-    modalTitle.innerHTML= "Online Chatroom";
-    modalDescription.innerHTML = "This is a web app that allows its users to have private conversations with anyone online. It stores and loads old messages, plus it offers an authentication mechanism through email!";
-    modalTechnologies.innerHTML = "<li>Technologies used for this project:&nbsp;</li><li>Node.js,</li><li>&nbsp;Express,</li><li>&nbsp;Socket.io,</li><li>&nbsp;MongoDB,</li><li>&nbsp;HTML5,</li><li>&nbsp;CSS3,</li><li>&nbsp;ES6,</li><li>&nbsp;Heroku</li>";
-    modalImage.setAttribute("src","images/laptop-chat.jpg");
-    modalFirstButton.innerHTML = "Get Source";
-    modalFirstButton.onclick = ()=>{ window.open("https://github.com/petrosly/online-chatroom-v2", "_blank");};
-    modalSecondButton.innerHTML = "View Demo";
-  }
-});
+function chatModal(){
+  modal.style.display = "flex";
+  modalSecondButton.style.display = "block";
+  modalTitle.innerHTML= "Online Chatroom";
+  modalDescription.innerHTML = "This is a web app that allows its users to have private conversations with anyone online. It stores and loads old messages, plus it offers an authentication mechanism through email!";
+  modalTechnologies.innerHTML = "<li>Technologies used for this project:&nbsp;</li><li>Node.js,</li><li>&nbsp;Express,</li><li>&nbsp;Socket.io,</li><li>&nbsp;MongoDB,</li><li>&nbsp;HTML5,</li><li>&nbsp;CSS3,</li><li>&nbsp;ES6,</li><li>&nbsp;Heroku</li>";
+  modalImage.setAttribute("src","images/laptop-chat.jpg");
+  modalFirstButton.innerHTML = "Get Source";
+  modalFirstButton.onclick = ()=>{ window.open("https://github.com/petrosly/online-chatroom-v2", "_blank");};
+  modalSecondButton.innerHTML = "View Demo";
+}
 
-projectHotel.addEventListener("click", ()=>{
-  if(document.documentElement.clientWidth < 1025){
-    modal.style.display = "flex";
-    modalTitle.innerHTML = "Hotel Website";
-    modalDescription.innerHTML = "This is a static website that is used to represent this hotel's services. There are many more details inside the website!";
-    modalTechnologies.innerHTML = "<li>Technologies used for this project:&nbsp;</li><li>HTML5,</li><li>&nbsp;CSS3,</li><li>&nbsp;ES6</li>";
-    modalImage.setAttribute("src","images/laptop-hotel.jpg");
-    modalFirstButton.innerHTML = "View Demo"
-    modalSecondButton.style.display = "none";
-  }
-});
-
-projectGame.addEventListener("click",()=>{
-  if(document.documentElement.clientWidth < 1025){
-    modal.style.display = "flex";
-    modalSecondButton.style.display = "block";
-    modalTitle.innerHTML  =  "Traffic Education Game";
-    modalDescription.innerHTML  = "It is a game whose goal is to educate children of smaller ages on the traffic matters. It is equipped with a database that is used for an analysis on the scores of the user. The analysis is then used to switch the focus on areas that the user lacks knowledge and also make the application meet each user's needs.";
-    modalTechnologies.innerHTML = "<li>Technologies used for this project:&nbsp;</li><li>C#,</li><li>&nbsp;Unity,</li><li>&nbsp;SQLite</li>";
-    modalImage.setAttribute("src","images/laptop-game.jpg");
-    modalFirstButton.innerHTML = "Get Source";
-    modalSecondButton.innerHTML = "Download Game";
-  }
-});
-
-projectPortfolio.addEventListener("click",()=>{
-  if(document.documentElement.clientWidth < 1025){
-    modal.style.display = "flex";
-    modalSecondButton.style.display = "block";
-    modalTitle.innerHTML = "Personal Portfolio Website";
-    modalDescription.innerHTML = "This is the page you are currently on! It is a static website that is used to display my projects!";
-    modalTechnologies.innerHTML = "<li>Technologies used for this project:&nbsp;</li><li>HTML5,</li><li>&nbsp;CSS3,</li><li>&nbsp;ES6,</li><li>&nbsp;Netlify</li>";
-    modalImage.setAttribute("src","images/laptop-portfolio.jpg");
-    modalFirstButton.innerHTML = "Get Source";
-    modalSecondButton.innerHTML = "View Demo";
-  }
-});
-
-expandChat.addEventListener("click", ()=>{
-    modal.style.display = "flex";
-    modalSecondButton.style.display = "block";
-    modalTitle.innerHTML= "Online Chatroom";
-    modalDescription.innerHTML = "This is a web app that allows its users to have private conversations with anyone online. It stores and loads old messages, plus it offers an authentication mechanism through email!";
-    modalTechnologies.innerHTML = "<li>Technologies used for this project:&nbsp;</li><li>Node.js,</li><li>&nbsp;Express,</li><li>&nbsp;Socket.io,</li><br><li>MongoDB,</li><li>&nbsp;HTML5,</li><li>&nbsp;CSS3,</li><li>&nbsp;ES6,</li><li>&nbsp;Heroku</li>";
-    modalImage.setAttribute("src","images/laptop-chat.jpg");
-    modalFirstButton.innerHTML = "Get Source";
-    modalFirstButton.onclick = ()=>{ window.open("https://github.com/petrosly/online-chatroom-v2", "_blank");};
-    modalSecondButton.innerHTML = "View Demo";
-});
-
-expandHotel.addEventListener("click", ()=>{
+function hotelModal(){
   modal.style.display = "flex";
   modalTitle.innerHTML = "Hotel Website";
   modalDescription.innerHTML = "This is a static website that is used to represent this hotel's services. There are many more details inside the website!";
@@ -141,9 +89,9 @@ expandHotel.addEventListener("click", ()=>{
   modalImage.setAttribute("src","images/laptop-hotel.jpg");
   modalFirstButton.innerHTML = "View Demo"
   modalSecondButton.style.display = "none";
-});
+}
 
-expandGame.addEventListener("click", ()=>{
+function gameModal(){
   modal.style.display = "flex";
   modalSecondButton.style.display = "block";
   modalTitle.innerHTML  =  "Traffic Education Game";
@@ -152,9 +100,9 @@ expandGame.addEventListener("click", ()=>{
   modalImage.setAttribute("src","images/laptop-game.jpg");
   modalFirstButton.innerHTML = "Get Source";
   modalSecondButton.innerHTML = "Download Game";
-});
+}
 
-expandPortfolio.addEventListener("click", ()=>{
+function portfolioModal(){
   modal.style.display = "flex";
   modalSecondButton.style.display = "block";
   modalTitle.innerHTML = "Personal Portfolio Website";
@@ -163,6 +111,46 @@ expandPortfolio.addEventListener("click", ()=>{
   modalImage.setAttribute("src","images/laptop-portfolio.jpg");
   modalFirstButton.innerHTML = "Get Source";
   modalSecondButton.innerHTML = "View Demo";
+}
+
+projectChat.addEventListener("click", ()=>{
+  if( document.documentElement.clientWidth <1025 ){
+    chatModal();
+  }
+});
+
+projectHotel.addEventListener("click", ()=>{
+  if(document.documentElement.clientWidth < 1025){
+    hotelModal();
+  }
+});
+
+projectGame.addEventListener("click",()=>{
+  if(document.documentElement.clientWidth < 1025){
+    gameModal();
+  }
+});
+
+projectPortfolio.addEventListener("click",()=>{
+  if(document.documentElement.clientWidth < 1025){
+    portfolioModal();
+  }
+});
+
+expandChat.addEventListener("click", ()=>{
+  chatModal();
+});
+
+expandHotel.addEventListener("click", ()=>{
+  hotelModal();
+});
+
+expandGame.addEventListener("click", ()=>{
+  gameModal();
+});
+
+expandPortfolio.addEventListener("click", ()=>{
+  portfolioModal();
 });
   /* Modal Tablet Behavior */
 /* Top Section Buttons*/
