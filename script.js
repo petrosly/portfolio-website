@@ -80,6 +80,7 @@ function chatModal(){
   modalFirstButton.innerHTML = "Get Source";
   modalFirstButton.onclick = ()=>{ window.open("https://github.com/petrosly/online-chatroom-v2", "_blank");};
   modalSecondButton.innerHTML = "View Demo";
+  modalSecondButton.onclick = ()=>{ window.open("https://company-chatroom.herokuapp.com/", "_blank");};
 }
 
 function hotelModal(){
@@ -90,6 +91,7 @@ function hotelModal(){
   modalImage.setAttribute("src","images/laptop-hotel.jpg");
   modalImage.setAttribute("alt","Screenshot of hotel website inside laptop mockup");
   modalFirstButton.innerHTML = "View Demo"
+  modalFirstButton.onclick = ()=>{ window.open("https://demo-tpl4.hotelist.gr/", "_blank");};
   modalSecondButton.style.display = "none";
 }
 
@@ -102,7 +104,9 @@ function gameModal(){
   modalImage.setAttribute("src","images/laptop-game.jpg");
   modalImage.setAttribute("alt","Screenshot of my game inside laptop mockup");
   modalFirstButton.innerHTML = "Get Source";
+  modalFirstButton.onclick = ()=>{ window.open("https://github.com/petrosly/Traffic-Education-Game-Code", "_blank");};
   modalSecondButton.innerHTML = "Download Game";
+  modalSecondButton.onclick = ()=>{ window.open("https://github.com/petrosly/Traffic-Education-Game-Build", "_blank");};
 }
 
 function portfolioModal(){
@@ -114,7 +118,9 @@ function portfolioModal(){
   modalImage.setAttribute("src","images/laptop-portfolio.jpg");
   modalImage.setAttribute("alt","Screenshot of portfolio website inside laptop mockup");
   modalFirstButton.innerHTML = "Get Source";
+  modalFirstButton.onclick = ()=>{ window.open("https://github.com/petrosly/portfolio-website", "_blank");};
   modalSecondButton.innerHTML = "View Demo";
+  modalSecondButton.onclick = ()=>{ window.open("https://www.petroslymper.com/", "_blank");};
 }
 
 projectChat.addEventListener("click", ()=>{
