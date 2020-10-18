@@ -168,9 +168,9 @@ document.querySelector(".contact-button").addEventListener("click",()=>{
   document.querySelector("#contact").scrollIntoView();
 });
 
-// document.querySelector(".get-resume-button").addEventListener("click",()=>{
-//   window.open("text.pdf","_blank");
-// })
+document.querySelector(".get-resume-button").addEventListener("click",()=>{
+  window.open("resume.pdf","_blank");
+})
 
 /* Create burger menu */
 const navBarLinks = document.querySelector(".links-bar");
@@ -249,7 +249,6 @@ function preloadImage(url){
 }
 
 window.addEventListener("load", ()=>{
-  console.log("Going to preload images!");
   preloadImage("images/laptop-chat.jpg");
   preloadImage('images/laptop-hotel.jpg');
   preloadImage('images/laptop-game.jpg');
