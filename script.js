@@ -241,3 +241,16 @@ window.addEventListener("resize",()=>{
     });
   }
 });
+
+/* Preload Images for Modal */
+function preloadImage(url){
+    var img=new Image();
+    img.src=url;
+}
+
+window.addEventListener("load", ()=>{
+  preloadImage("images/laptop-chat.jpg");
+  preloadImage('images/laptop-hotel.jpg');
+  preloadImage('images/laptop-game.jpg');
+  preloadImage('images/laptop-portfolio.jpg');
+});
