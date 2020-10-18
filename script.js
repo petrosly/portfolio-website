@@ -249,6 +249,7 @@ function preloadImage(url){
 }
 
 window.addEventListener("load", ()=>{
+  console.log("Going to preload images!");
   preloadImage("images/laptop-chat.jpg");
   preloadImage('images/laptop-hotel.jpg');
   preloadImage('images/laptop-game.jpg');
